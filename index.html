@@ -13,14 +13,18 @@
     <title>SEACLUB Siargao, Private Pool Villas, Private Villas Resort Siargao</title>
     <style>
         body {
-            font-family: 'Roboto Mono', monospace; /* Set the font to Roboto Mono */
+            font-family: 'Roboto Mono', monospace;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #2D2D2D;
-            margin: 0; /* Reset default margin */
+            margin: 0;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         img {
             max-width: 100%;
@@ -33,13 +37,13 @@
         }
         .button {
             padding: 10px 20px;
-            width: 150px; /* Set a fixed width for both buttons */
-            text-align: center; /* Center the text inside the button */
+            width: 150px;
+            text-align: center;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s, color 0.3s; /* Added transition for color */
+            transition: background-color 0.3s, color 0.3s;
             text-decoration: none;
             display: inline-block;
         }
@@ -49,7 +53,7 @@
         }
         .button-inquire:hover {
             background-color: #2D2D2D;
-            color: #F1EFE7; /* Change text color on hover */
+            color: #F1EFE7;
         }
         .button-book {
             background-color: #F1EFE7;
@@ -57,13 +61,14 @@
         }
         .button-book:hover {
             background-color: #2D2D2D;
-            color: #F1EFE7; /* Change text color on hover */
+            color: #F1EFE7;
         }
         footer {
             position: absolute;
-            bottom: 10px; /* Place it at the bottom with a little margin */
+            bottom: 10px;
             text-align: center;
             width: 100%;
+            color: #2D2D2D;
         }
         footer a {
             color: #F1EFE7;
@@ -76,14 +81,15 @@
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="SEACLUB Siargao">
-    <div class="button-container">
-        <a href="https://www.book.seaclub.co" class="button button-book">BOOK NOW</a>
-        <a href="https://api.whatsapp.com/message/HA5WB2HSQDMBD1" class="button button-inquire">INQUIRE NOW</a>
+    <div class="content-container">
+        <img src="logo.png" alt="SEACLUB Siargao">
+        <div class="button-container">
+            <a href="https://www.book.seaclub.co" class="button button-book">BOOK NOW</a>
+            <a href="https://api.whatsapp.com/message/HA5WB2HSQDMBD1" class="button button-inquire">INQUIRE NOW</a>
+        </div>
     </div>
     <footer>
         <p>&copy; 2023 SEACLUB Siargao | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy & Booking Terms</a></p>
     </footer>
 </body>
 </html>
-
