@@ -5,60 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="title" content="SEACLUB Siargao, Private Pool Villas, Private Villas Resort Siargao">
-    <meta name="description" content="SEACLUB Siargao provides a superb hospitality experience in our three bedroom private pool villas inspired by nature's luxuries. Escape to our Pivate Villas resort to connect with nature and enjoy our complimentary concierge service.">
-    <meta name="keywords" content="seaclub Siargao, Private Villas Siargao, Private Pool Villas, Villas for groups Siargao, luxury villas, private pool and garden villas, Bali style villas Siargao, three bedroom villas, short term rental Siargao">
-    <meta name="author" content="SEACLUB">
+    <!-- ... (rest of your meta tags) ... -->
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seaclub.co/">
-    <meta property="og:title" content="SEACLUB Siargao, Private Pool Villas, Private Villas Resort Siargao">
-    <meta property="og:description" content="SEACLUB Siargao provides a superb hospitality experience in our three bedroom private pool villas inspired by nature's luxuries. Escape to our Pivate Villas resort to connect with nature and enjoy our complimentary concierge service.">
-    <meta property="og:image" content="path_to_your_social_share_image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://seaclub.co/">
-    <meta property="twitter:title" content="SEACLUB Siargao, Private Pool Villas, Private Villas Resort Siargao">
-    <meta property="twitter:description" content="SEACLUB Siargao provides a superb hospitality experience in our three bedroom private pool villas inspired by nature's luxuries. Escape to our Pivate Villas resort to connect with nature and enjoy our complimentary concierge service.">
-    <meta property="twitter:image" content="path_to_your_social_share_image.jpg">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <title>SEACLUB Siargao, Private Pool Villas, Private Villas Resort Siargao</title>
     <style>
         body {
+            font-family: 'Roboto Mono', monospace; /* Set the font to Roboto Mono */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #2D2D2D; /* or any color you prefer */
+            background-color: #2D2D2D;
+            margin: 0; /* Reset default margin */
         }
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px; /* margin between the logo and the buttons */
+            margin-bottom: 20px;
         }
         .button-container {
             display: flex;
-            gap: 20px; /* space between the buttons */
+            gap: 20px;
         }
         .button {
             padding: 10px 20px;
+            width: 150px; /* Set a fixed width for both buttons */
+            text-align: center; /* Center the text inside the button */
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none; /* remove underline from anchor tags */
-            display: inline-block; /* to apply padding and other block styles */
+            transition: background-color 0.3s, color 0.3s; /* Added transition for color */
+            text-decoration: none;
+            display: inline-block;
         }
         .button-inquire {
-            background-color: #F1EFE7; 
+            background-color: #F1EFE7;
             color: #2D2D2D;
         }
         .button-inquire:hover {
-            background-color: #2D2D2D; 
+            background-color: #2D2D2D;
+            color: #F1EFE7; /* Change text color on hover */
         }
         .button-book {
             background-color: #F1EFE7;
@@ -66,6 +57,21 @@
         }
         .button-book:hover {
             background-color: #2D2D2D;
+            color: #F1EFE7; /* Change text color on hover */
+        }
+        footer {
+            position: absolute;
+            bottom: 10px; /* Place it at the bottom with a little margin */
+            text-align: center;
+            width: 100%;
+        }
+        footer a {
+            color: #F1EFE7;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -75,5 +81,9 @@
         <a href="https://www.book.seaclub.co" class="button button-book">BOOK NOW</a>
         <a href="https://api.whatsapp.com/message/HA5WB2HSQDMBD1" class="button button-inquire">INQUIRE NOW</a>
     </div>
+    <footer>
+        <p>&copy; 2023 SEACLUB Siargao | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy & Booking Terms</a></p>
+    </footer>
 </body>
 </html>
+
