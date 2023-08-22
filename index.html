@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +33,8 @@
         body {
             font-family: 'Roboto Mono', monospace;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
             height: 100vh;
             background-color: #2D2D2D;
             margin: 0;
@@ -44,6 +43,7 @@
         .main-container {
             display: flex;
             flex-direction: row;
+            flex: 1;
             width: 100%;
             height: 100%;
         }
@@ -108,15 +108,13 @@
             color: #F1EFE7;
         }
 
-        .footer-container {
-            width: 100%;
+        footer {
             text-align: center;
+            width: 100%;
             color: #F1EFE7;
-            margin-top: 20px;
         }
 
-        .footer-container a,
-        .footer-container a:hover {
+        footer a, footer a:hover {
             color: #F1EFE7;
             text-decoration: none;
             margin: 0 10px;
@@ -127,20 +125,21 @@
             .main-container {
                 flex-direction: column;
             }
-
-            .content-container,
-            .elfsight-container,
-            .footer-container {
+            .content-container, .elfsight-container {
                 width: 100%;
+                margin-bottom: 20px;  /* Spacing between content and elfsight on mobile */
             }
+        }
 
-            .content-container {
-                margin-bottom: 40px; /* Added margin for mobile */
+        /* Desktop view adjustment for the footer */
+        @media (min-width: 769px) {
+            .footer-container {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
             }
         }
     </style>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
@@ -151,12 +150,14 @@
                 <a href="https://www.book.seaclub.co" class="button button-book">BOOK NOW</a>
             </div>
         </div>
+
         <div class="elfsight-container">
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-82984bdd-4b93-4e17-9ddd-e5781f8d83db"></div>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-2892b965-1131-4931-8f76-235862ff6278"></div>
         </div>
+
         <div class="footer-container">
             <footer>
                 <p>&copy; 2023 SEACLUB Siargao | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy & Booking Terms</a></p>
